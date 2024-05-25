@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-yellow-100 text-sm;
+  }
+  p {
+    @apply text-base
+  }
+}
+
+@layer components {
+  .card {
+    @apply p-8 w-full min-h-72 bg-white rounded-2xl hover:shadow-xl hover:shadow-neutral-300/15 transition duration-200;
+  }
+}
